@@ -821,9 +821,7 @@ D3D9EndScene_Detour (IDirect3DDevice9* This)
       TBF_ImportFunctionFromSpecialK ( "SK_ResizeOSD",
                                          SK_ResizeOSD );
 
-    static SK_Steam_PiratesAhoy_pfn SK_Steam_PiratesAhoy =
-      TBF_ImportFunctionFromSpecialK ( "SK_Steam_PiratesAhoy",
-                                         SK_Steam_PiratesAhoy );
+    static SK_Steam_PiratesAhoy_pfn SK_Steam_PiratesAhoy = 0x00
 
     if (SK_Steam_PiratesAhoy () != 0x00)
     {
